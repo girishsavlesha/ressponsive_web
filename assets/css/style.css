@@ -40,8 +40,11 @@ body{
     font-weight: 600;
     color:white;
 }
+nav{
+   
+}
 header{
-    position: relative;
+   
     width: 100%;
     min-height: 15vh;
     background-color: #3BB7AE;
@@ -56,6 +59,7 @@ header{
 }
 
 .navbar{
+    z-index: 5;
     position: relative;
     width: 90%;
     background-color: #337777  ;
@@ -68,10 +72,7 @@ header{
     align-items: center;
 }
 
-nav{
-    position: relative;
-   
-}
+
 .nav-links{
     
     justify-content: flex-end;
@@ -470,16 +471,17 @@ footer{
         align-items:center;
         z-index: 1;
         justify-content: space-around;
+        opacity: 0.9;
         
         transition: transform 0.5s ease-in;
         -webkit-transition: transform 0.5s ease-in;
         -moz-transition:  transform 0.5s ease-in;
         -o-transition: transform 0.5s ease-in;
-        transform:translateX(100%);
-
-        -webkit-transform: translateX(100%);
-        -moz-transform: translateX(100%);
-        -o-transform: translateX(100%);
+        
+        transform:translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
         visibility: hidden;
        
     }
@@ -497,26 +499,26 @@ footer{
   
     .nav-active{
         visibility: visible;
-        transform: translateX(0%);
-        -webkit-transform: translateX(0%);
-        -moz-transform: translateX(0%);
-        -o-transform: translateX(0%);
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -o-transform: translateY(0%);
     
     }
     @keyframes navLinkFade {
         from{
             opacity: 0;
             transform: translateX(50px);
-            -webkit-transform:translateX(50px);
-            -moz-transform: translateX(50px);
-            -o-transform: translateX(50px);
+            -webkit-transform:translateY(-50px);
+            -moz-transform: translateY(-50px);
+            -o-transform: translateY(-50px);
         }
         to{
             opacity: 1;
             transform: translateX(0px);
-            -webkit-transform: translateX(0px);
-            -moz-transform:translateX(0px);
-            -o-transform: translateX(0px);
+            -webkit-transform: translateY(0px);
+            -moz-transform:translateY(0px);
+            -o-transform: translateY(0px);
         }
         
     }
