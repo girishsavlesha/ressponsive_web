@@ -194,11 +194,11 @@ main{
 a.button{
     display: block;
     
-    padding: 0;
+    padding: 5px 0px;
     margin:10% auto;
     font-weight: 200;
     text-align: center;
-    line-height: 40px;
+    
     color: #FFF;
     border-radius: 5px;
     transition: all 0.2s ;
@@ -443,7 +443,7 @@ footer{
     }
     .slide-navigate{margin: auto;}
     a.button{
-        line-height: 30px;
+        
         background: #3BB7AE;
         margin:5% auto;
 
@@ -547,7 +547,7 @@ footer{
         color:white;
         background:#3BB7AE ;
         position: relative;
-        height: 25vh;
+        
         width: 90%;
         left: 0;
         border-radius:0;
@@ -574,7 +574,7 @@ footer{
     }
     
     a.button{
-        line-height: 50px;
+     
         background: #337777;
         margin:5% auto;
 
@@ -592,7 +592,13 @@ footer{
         height: calc(1.2rem*3);
 
     }
-   
+    .ft-links li{
+        padding:0px 20px 0px;
+    }
+   .ft-links a,.copyright-txt a{
+       font-weight: normal;
+       font-size: 12px;
+   }
 }
 @media screen and (max-width:450px){
     .slide-show{
