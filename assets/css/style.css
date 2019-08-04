@@ -10,7 +10,7 @@ a{
 li{
     list-style: none;
 }
-
+d
 body{
     font-family: 'Montserrat', sans-serif;
     background: #f2f2f2;
@@ -31,6 +31,10 @@ body{
     display: none;
 }
 .logo-container, .nav-links{
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
 }
 .nav-links a{
@@ -45,6 +49,10 @@ header{
     width: 100%;
     min-height: 15vh;
     background-color: #3BB7AE;
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
 }
 .logo{
@@ -61,6 +69,10 @@ header{
     width: 90%;
     background-color: #337777  ;
     margin: auto;
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     height: 7vh;
     align-items: center;
@@ -111,6 +123,10 @@ header{
     position: absolute;
     left: 40%;
     bottom: 30px;
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     margin: auto;   
 }
@@ -226,6 +242,10 @@ a.button{
     
     padding-top:40px;
     margin: auto;
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
   
     width:90%;
@@ -258,7 +278,13 @@ a.button{
 }
 .article-left{
     height: 100%;
+    -webkit-box-flex: 2;    
+    -moz-box-flex: 2;
     flex:2;
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display:flex;
     flex-direction: column;
     
@@ -300,6 +326,10 @@ a.button{
 .article-right{
     
     flex: 1;
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     
     display:flex;
     flex-direction: column;
@@ -346,6 +376,10 @@ footer{
     background-color: #3BB7AE;
     height: 200px;
     width:100%;
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
    
     display: flex;
     flex-direction: column;
@@ -355,10 +389,18 @@ footer{
 .footer-main{
     
     margin:40px auto;
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
 }
 .ft-links{
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     
 }
@@ -464,6 +506,10 @@ footer{
         width: 100%;
         top:11vh;
         background-color: #3BB7AE;
+        display: -webkit-box;      
+        display: -moz-box;        
+        display: -ms-flexbox;      
+        display: -webkit-flex;
         display: flex;
         flex-direction: column;
         align-items:center;
