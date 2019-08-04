@@ -1,23 +1,22 @@
+$(document).ready(function(){
+    var offset = 300;
+    var duration = 500;
+ 
 
- window.onscroll = () =>{
-   var topBtn = document.getElementById('goTopBtn');
-   if(window.pageYOffset >= 300){
-      console.log(topBtn);
-       topBtn.style.display = "block" ;  
-   }
-   else{
-      topBtn.style.display = "none" ;  
-   }
-   topBtn.addEventListener("click",function(){
-      window.scrollTo({
-          top:0,
-          left:0,
-          behavior:'smooth'
+    $(window).scroll(function(){
+        if($(this).scrollTop() > offset){
+            $('#goTopBtn').fadeIn(duration); 
+        }
+        else{
+            $('#goTopBtn').fadeOut(duration); 
+        }
+    });
+    $('#goTopBtn').click(function(){
+        $('body,html').animate({scrollTop: 0 }, duration);
+    });
+});
+ 
 
-      });
-      
-   });
- };
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
