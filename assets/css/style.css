@@ -10,7 +10,7 @@ a{
 li{
     list-style: none;
 }
-d
+
 body{
     font-family: 'Montserrat', sans-serif;
     background: #f2f2f2;
@@ -324,8 +324,10 @@ a.button{
 
 }
 .article-right{
-    
+    -webkit-box-flex: 2;    
+    -moz-box-flex: 2;
     flex: 1;
+
     display: -webkit-box;      
     display: -moz-box;        
     display: -ms-flexbox;      
