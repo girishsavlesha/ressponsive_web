@@ -9,8 +9,13 @@
       topBtn.style.display = "none" ;  
    }
    topBtn.addEventListener("click",function(){
-      window.scrollTo(0,0);
-      window.scroll({behavior:'smooth'})
+      window.scrollTo({
+          top:0,
+          left:0,
+          behavior:'smooth'
+
+      });
+      
    });
  };
 const navSlide = () => {
