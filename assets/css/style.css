@@ -453,8 +453,9 @@ footer{
 
 @media screen and (max-width:768px){
     
-    .slide-show{
-        height: 400px;
+    .slide-show,.articles{  
+        width: 100%;
+        margin: 0px;
     }
     body{
         overflow-x: hidden;
@@ -550,7 +551,7 @@ footer{
         background:#3BB7AE ;
         position: relative;
         
-        width: 90%;
+        width: 100%;
         left: 0;
         border-radius:0;
         margin:auto;
@@ -586,8 +587,15 @@ footer{
         font-size:14px;
 
     }
+    .section-title{
+        padding-left:10px; 
+    }
     .section-title h1{
         font-size:25px;
+        
+    }
+    .article{
+        padding: 10px 20px;
     }
     .article-text p{
         line-height: 1.2rem;
@@ -601,10 +609,4 @@ footer{
        font-weight: normal;
        font-size: 12px;
    }
-}
-@media screen and (max-width:450px){
-    .slide-show{
-        height: 300px;
-    }
-
 }
