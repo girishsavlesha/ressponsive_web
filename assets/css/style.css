@@ -10,10 +10,7 @@ a{
 li{
     list-style: none;
 }
-html{
-    scroll-behavior: smooth;
 
-}
 body{
     font-family: 'Montserrat', sans-serif;
     background: #f2f2f2;
